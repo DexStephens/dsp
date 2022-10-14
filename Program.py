@@ -21,5 +21,5 @@ for custorder in range(0, len(custLine)):
 listSortedCustomers = sorted(custDict.items(), key=lambda x: x[1], reverse=True)
 
 for finalCust in range(0, len(listSortedCustomers)):
-    print(f'{listSortedCustomers[finalCust][0]}: {listSortedCustomers[finalCust][1]}')
+    print(f'{listSortedCustomers[finalCust][0].ljust(19)} {listSortedCustomers[finalCust][1]}')
 
